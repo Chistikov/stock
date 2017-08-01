@@ -1,0 +1,671 @@
+*{
+
+}
+.hideEl{
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f6;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	min-width: 320px;
+}
+header{
+	width: 100%;
+	height: 500px;
+	background-color: gray;
+	overflow: hidden;
+}
+.topBar{
+	width: 100%;
+	height: 70px;
+	background: #ffffff;
+}
+.slider{
+	background-image: url("../content/img/bg_img1.png");
+	width: 100%;
+	height: calc(100% - 70px);
+	background-size: cover;
+	background-position: 50% 60%;
+	display: flex;
+}
+.slider span{
+	display: block;
+	margin: auto;
+	padding: 120px 0px 30px 0px;
+	color: white;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.slider a{
+	display: block;
+	width: 190px;
+	height: 60px;
+	border: 2px solid rgba(255,255,255,0.0);
+	text-align: center;
+	line-height: 60px;
+	margin: auto;
+	color: #555;
+	text-decoration: none;
+	font-weight: 400;
+	background-color: rgba(255,255,255,0.92);
+	transition: 0.25s;
+}
+.slider a:active{
+	border: 2px solid white;
+	color: #fff;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.userPanel{
+	width: auto;
+	height: auto;
+	margin: auto;
+	color: #fff;
+}
+.userPanel .userImg{
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	background-size: cover;
+	border: solid 1px white;
+}
+.userPanel .infoCont{
+	display: inline-block;	
+	vertical-align: top;
+	padding: 19px 55px 0px 10px;
+}
+.userPanel .infoCont .userName{	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.userPanel .infoCont .userInfo{	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: lowercase;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: -12px;
+}
+.userPanel .infoCont2{
+	display: inline-block;	
+	vertical-align: top;
+	padding: 0px 0px 0px 0px;
+	text-align: right;
+	padding-top: 19px;
+}
+.infoCont2 .subscribersAndPublications{
+	font-size: 22px;
+	height: 20px;
+	font-weight: 300;
+	margin-bottom: -10px;
+}
+.infoCont2 .subscribersAndPublications span{
+	display: inline-block;
+	padding-top: 0px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.infoCont3{
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+.infoCont3 .btns{
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin: 0px 3px;
+}
+
+
+
+
+
+article{
+	padding: 65px 0px;
+}
+.newWorksCont{
+	width: 1120px;
+	padding-bottom: 65px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.newWork{
+	width: calc(370px * 0.754);
+	height: calc(270px * 0.754);
+	background-color: #999;
+	border-bottom: solid 1px #f6f6f6;
+	border-right: solid 1px #f6f6f6;
+	background: #eee;
+}
+.newWork a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	overflow: hidden;
+}
+.darkBg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.0);
+	transition: background-color 0.3s;
+}
+.newWork a .authorImg{
+	position: absolute;
+	top: 165px;
+	left: 9px;	
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+	opacity: .0; /*    изменить на 0       */
+	transition: 0.25s;
+	background-size: cover;
+	border: solid 1px rgba(255,255,255,.5);
+	box-sizing: border-box;
+}
+.newWork a .authorName{
+	position: absolute;
+	top: 175px;
+	left: 45px;	
+	width: 220px;
+	font-size: 14px;
+	color: rgba(255,255,255,.85);
+	font-weight: 300;
+	opacity: .0; /*    изменить на 0       */
+	transition: 0.25s;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.newWork:hover a .authorName, .newWork:hover a .authorImg{
+	opacity: 1;
+}
+.newWork:hover .darkBg{
+	background-color: rgba(0,0,0,.3);
+}
+
+.contentTopic{
+	display: block;
+	width: 1120px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	font-size: 17px;
+	font-weight: 300;
+	color: #888;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.topAuthors{
+	height: 50px;
+	width: 1120px;
+	background-color: rgba(0,0,0,0.08);
+	margin: 0px auto 50px auto;
+	padding: 10px 0px;
+	border-radius: 3px;
+	text-align: center;
+}
+.topAuthor{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 12px;
+	border-radius: 50%;
+	background-color: #fff;
+	flex-wrap: wrap;
+	position: relative;
+	background-position: 50%;
+	background-size: cover;
+	vertical-align: top;
+}
+.topAuthor .viewMoreAuthors{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	font-weight: 300;
+	text-decoration: none;
+	color: white;
+	background-color: #999;
+	line-height: 50px;
+	overflow: hidden;
+}
+.topAuthor .tooltip{
+	position: absolute;
+	top: -40px;
+	left: calc(0px - 75px + 15px);
+	vertical-align: top;
+	background-color: rgba(0,0,0,.6);
+	color: rgba(255,255,255,.8);;
+	font-size: 16px;
+	font-weight: 300;
+	width: 0px;
+	height: 0px;
+	padding: 0px 0px;
+	line-height: 16px;
+	border-radius: 3px;
+	opacity: 0;
+	transition: opacity .3s;
+}
+.topAuthor:hover .tooltip{
+	opacity: 1;
+	width: 164px;
+	height: 16px;
+	padding: 5px 3px;
+}
+.topAuthor .tooltip span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.topAuthor .tooltip:after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-top: 0px solid rgba(0,0,0,.6);;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	position: absolute;
+	top: 26px;
+	left: calc(0px + 50% - 10px);
+}
+.topAuthor:hover .tooltip:after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid rgba(0,0,0,.6);;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 26px;
+	left: calc(0px + 50% - 10px);
+}
+
+
+
+/************ topAutors.php ************/
+.newWorksCont .contentTopic{
+
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+table.topAuthorTable{
+	width: 100%;
+	max-width: 100%;
+}
+.topAuthorTable td{
+	height: 50px;
+	padding: 7px 5px 7px 5px;
+	border-bottom: 1px solid #ddd;
+	vertical-align: bottom;
+}
+.topAuthorTable td.userNumber{
+	width: 50px;
+	padding-right: 10px;
+  padding-left: 5px;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	color: #aaa;
+}
+.topAuthorTable td.userImg {
+	width: 50px;
+	padding-right: 5px;
+}
+.topAuthorTable td.userImg div{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-size: cover;
+}
+.topAuthorTable td.userName{
+	max-width: 420px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #333;
+	font-size: 17px;
+}
+.topAuthorTable td.userInfo{
+	width: 180px;
+	font-size: 16px;
+	line-height: 20px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	color: #222;
+}
+.topAuthorTable td.userInfo span{
+	font-size: 17px;
+}
+.topAuthorTable td.subscribeButton{
+	padding-right: 10px;
+}
+.topAuthorTable td.subscribeButton a{
+	display: block;
+	padding: 7px 12px;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #5891cb;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/************ MEDIA ************/
+
+@media screen and (min-width:769px) and (max-width:1199px){
+  header{
+		height: 450px;
+	}
+	.topBar{
+		height: 70px;
+	}
+	.slider{
+		height: calc(100% - 70px);
+		background-position: 50% 60%;
+	}
+	.slider span{
+		padding: 110px 0px 15px 0px;
+		font-size: 32px;
+	}
+	.slider a{
+		width: 175px;
+		height: 55px;
+		line-height: 55px;
+		font-size: 19px;
+	}
+	
+	.contentTopic{
+		width: 750px;
+		font-size: 17px;
+	}
+  .newWorksCont{
+  	width: 750px;
+  }
+  .newWork{
+  	width: calc(370px * 0.504);
+  	height: calc(270px * 0.504);
+  }
+
+  .newWork a .authorImg{
+		top: 105px;
+		left: 7px;	
+		width: 25px;
+		height: 25px;		
+	}
+	.newWork a .authorName{
+		top: 111px;
+		left: 38px;	
+		font-size: 13px;
+		width: 140px;
+	}
+	.topAuthors{
+		height: 38px;
+		width: 750px;
+		margin: 0px auto 50px auto;
+	}
+	.topAuthor{
+		width: 38px;
+		height: 38px;
+		margin: 0px 5px 10px 5px;
+		border-radius: 50%;
+		background-color: #fff;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.topAuthor .viewMoreAuthors{
+		line-height: 38px;
+	}
+
+
+
+	/************ topAutors.php ************/
+	.topAuthorTable td.userNumber{
+		font-size: 20px;
+		width: auto;
+	}
+	.topAuthorTable td.userImg {
+		width: 50px;
+		padding-right: 0px;
+	}
+	.topAuthorTable td.userImg div{
+		width: 40px;
+		height: 40px;
+		margin-bottom: 5px;
+	}
+	.topAuthorTable td.userName{
+		max-width: 300px;
+		line-height: 50px;
+		font-size: 15px;
+		padding-right: 20px;
+	}
+	.topAuthorTable td.userInfo{
+		width: 155px;
+		font-size: 15px;
+		line-height: 18px;
+		padding-bottom: 14px;
+	}
+	.topAuthorTable td.userInfo span{
+		font-size: 16px;
+	}
+	.topAuthorTable td.subscribeButton a{
+		padding: 7px 12px;
+		margin: 0px 0px 10px 0px;
+		font-size: 16px;
+	}
+}
+@media screen and (min-width:421px) and (max-width:768px){
+	header{
+		height: 350px;
+	}
+	.topBar{
+		height: 60px;
+	}
+	.slider{
+		height: calc(100% - 60px);
+		background-position: 50% 60%;
+	}
+	.slider span{
+		padding: 80px 0px 10px 0px;
+		font-size: 22px;
+	}
+	.slider a{
+		width: 160px;
+		height: 50px;
+		border: 1px solid rgba(255,255,255,0.0);
+		line-height: 50px;
+		font-size: 18px;
+	}
+	.slider a:active{
+		border: 1px solid white;
+	}
+	
+	.contentTopic{
+		width: 410px;
+		font-size: 17px;
+	}
+	.newWorksCont{
+  	width: 410px;
+  }
+  .newWork{
+  	width: calc(370px * 0.551);
+  	height: calc(270px * 0.551);
+  }
+
+  .newWork a .authorImg{
+		top: 117px;
+		left: 7px;	
+		width: 25px;
+		height: 25px;
+	}
+	.newWork a .authorName{
+		top: 123px;
+		left: 36px;	
+		font-size: 13px;
+		width: 160px;
+	}
+	.topAuthors{
+		height: 86px;
+		width: 410px;
+		margin: 0px auto 50px auto;
+	}
+	.topAuthor{
+		width: 38px;
+		height: 38px;
+		margin: 0px 7px 10px 7px;
+		border-radius: 50%;
+		background-color: #fff;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.topAuthor .viewMoreAuthors{
+		line-height: 38px;
+	}
+
+
+
+	/************ topAutors.php ************/
+	.topAuthorTable td.userNumber{
+		font-size: 15px;
+		width: auto;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.topAuthorTable td.userImg {
+		width: 35px;
+		padding-right: 0px;
+	}
+	.topAuthorTable td.userImg div{
+		width: 35px;
+		height: 35px;
+		margin-bottom: 7px;
+	}
+	.topAuthorTable td.userName{
+		max-width: 100px;
+		line-height: 50px;
+		font-size: 11px;
+		padding-right: 5px;
+	}
+	.topAuthorTable td.userInfo{
+		width: 90px;
+		font-size: 10px;
+		line-height: 15px;
+		padding-bottom: 14px;
+		padding-top: 0px;
+	}
+	.topAuthorTable td.userInfo span{
+		font-size: 10px;
+	}
+	.topAuthorTable td.subscribeButton{
+		padding-right: 0px;
+	}
+	.topAuthorTable td.subscribeButton a{
+		padding: 5px 7px;
+		margin: 0px 0px 12px 0px;
+		font-size: 12px;
+	}
+}
+@media screen and (min-width:0px) and (max-width:420px)  {
+	header{
+		height: 300px;
+	}
+	.topBar{
+		height: 50px;
+	}
+	.slider{
+		height: calc(100% - 50px);
+		background-position: 50% 60%;
+	}
+	.slider span{
+		padding: 50px 0px 20px 0px;
+		font-size: 20px;
+	}
+	.slider a{
+		width: 150px;
+		height: 45px;
+		border: 1px solid rgba(255,255,255,0.0);
+		line-height: 45px;
+		font-size: 16px;
+	}
+	.slider a:active{
+		border: 1px solid white;
+	}
+	
+	.contentTopic{
+		width: 310px;
+		font-size: 16px;
+	}
+	.newWorksCont{
+  	width: 310px;
+  }
+  .newWork{
+  	width: calc(370px * 0.416);
+  	height: calc(270px * 0.416);
+  }
+
+  .newWork a .authorImg{
+		top: 82px;
+		left: 5px;	
+		width: 25px;
+		height: 25px;
+	}
+	.newWork a .authorName{
+		top: 88px;
+		left: 34px;		
+		font-size: 13px;
+		width: 112px;
+	} 
+	.topAuthors{
+		height: 70px;
+		width: 310px;
+		margin: 0px auto 50px auto;
+	}
+	.topAuthor{
+		width: 30px;
+		height: 30px;
+		margin: 0px 4px 10px 4px;
+	}
+	.topAuthor .viewMoreAuthors{
+		line-height: 30px;
+		font-size: 16px;
+	}
+}
