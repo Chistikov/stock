@@ -320,75 +320,69 @@ article{
 
 /************ topAutors.php ************/
 .newWorksCont .contentTopic{
-
-	padding-bottom: 10px;
 	margin-bottom: 0px;
 }
-table.topAuthorTable{
+.topAuthorTable *{
+	/*outline: 1px solid green;*/
 	width: 100%;
-	max-width: 100%;
+	vertical-align: top;
 }
-.topAuthorTable td{
-	height: 50px;
-	padding: 7px 5px 7px 5px;
-	border-bottom: 1px solid #ddd;
-	vertical-align: bottom;
+.topAuthorTable tr{
+	border-bottom: solid 1px #ddd;
+
 }
-.topAuthorTable td.userNumber{
-	width: 50px;
-	padding-right: 10px;
-  padding-left: 5px;
-	font-size: 30px;
-	line-height: 50px;
+.topAuthorTable .userNumber{
+	display: block;
+	width: 55px;
+	font-size: 25px;
 	text-align: center;
+	padding: 23px 10px 17px 0px;
 	color: #aaa;
 }
-.topAuthorTable td.userImg {
-	width: 50px;
-	padding-right: 5px;
+.topAuthorTable .userImg{
+	width: auto;
+	height: 70px;
 }
-.topAuthorTable td.userImg div{
+.topAuthorTable .userImg div{
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
 	background-size: cover;
+	border-radius: 50%;
+	margin-top: 10px;
 }
-.topAuthorTable td.userName{
-	max-width: 420px;
-	overflow: hidden;
+.topAuthorTable .userName{
+	max-width: 662px;
+	padding: 26px 0px 0px 10px;
+	text-transform: uppercase;
+	font-size: 17px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	text-transform: uppercase;
-	line-height: 50px;
-	color: #333;
-	font-size: 17px;
+	overflow: hidden;
 }
-.topAuthorTable td.userInfo{
-	width: 180px;
-	font-size: 16px;
+.topAuthorTable .userInfo{
+	padding: 15px 45px 10px 40px;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: 300;
 	line-height: 20px;
-	padding-top: 0px;
-	padding-bottom: 10px;
-	color: #222;
 }
-.topAuthorTable td.userInfo span{
-	font-size: 17px;
+.topAuthorTable .userInfo span{
+	font-weight: 500;
 }
-.topAuthorTable td.subscribeButton{
+.topAuthorTable .subscribeButton{
+	padding-top: 27px;
 	padding-right: 10px;
 }
-.topAuthorTable td.subscribeButton a{
-	display: block;
-	padding: 7px 12px;
-	margin: 0px 0px 10px 0px;
-	text-align: center;
-	border-radius: 3px;
+.topAuthorTable .subscribeButton a{
+	padding: 7px 17px;
 	background-color: #5891cb;
-	color: white;
-	font-size: 16px;
-	font-weight: 300;
 	text-decoration: none;
+	font-weight: 300;
+	font-size: 16px;
+	color: white;
+	border-radius: 3px;
 }
+
 
 /************ MEDIA ************/
 
@@ -455,44 +449,8 @@ table.topAuthorTable{
 	.topAuthor .viewMoreAuthors{
 		line-height: 38px;
 	}
-
-
-
-	/************ topAutors.php ************/
-	.topAuthorTable td.userNumber{
-		font-size: 20px;
-		width: auto;
-	}
-	.topAuthorTable td.userImg {
-		width: 50px;
-		padding-right: 0px;
-	}
-	.topAuthorTable td.userImg div{
-		width: 40px;
-		height: 40px;
-		margin-bottom: 5px;
-	}
-	.topAuthorTable td.userName{
-		max-width: 300px;
-		line-height: 50px;
-		font-size: 15px;
-		padding-right: 20px;
-	}
-	.topAuthorTable td.userInfo{
-		width: 155px;
-		font-size: 15px;
-		line-height: 18px;
-		padding-bottom: 14px;
-	}
-	.topAuthorTable td.userInfo span{
-		font-size: 16px;
-	}
-	.topAuthorTable td.subscribeButton a{
-		padding: 7px 12px;
-		margin: 0px 0px 10px 0px;
-		font-size: 16px;
-	}
 }
+
 @media screen and (min-width:421px) and (max-width:768px){
 	header{
 		height: 350px;
@@ -559,50 +517,7 @@ table.topAuthorTable{
 	}
 	.topAuthor .viewMoreAuthors{
 		line-height: 38px;
-	}
-
-
-
-	/************ topAutors.php ************/
-	.topAuthorTable td.userNumber{
-		font-size: 15px;
-		width: auto;
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-	.topAuthorTable td.userImg {
-		width: 35px;
-		padding-right: 0px;
-	}
-	.topAuthorTable td.userImg div{
-		width: 35px;
-		height: 35px;
-		margin-bottom: 7px;
-	}
-	.topAuthorTable td.userName{
-		max-width: 100px;
-		line-height: 50px;
-		font-size: 11px;
-		padding-right: 5px;
-	}
-	.topAuthorTable td.userInfo{
-		width: 90px;
-		font-size: 10px;
-		line-height: 15px;
-		padding-bottom: 14px;
-		padding-top: 0px;
-	}
-	.topAuthorTable td.userInfo span{
-		font-size: 10px;
-	}
-	.topAuthorTable td.subscribeButton{
-		padding-right: 0px;
-	}
-	.topAuthorTable td.subscribeButton a{
-		padding: 5px 7px;
-		margin: 0px 0px 12px 0px;
-		font-size: 12px;
-	}
+	}	
 }
 @media screen and (min-width:0px) and (max-width:420px)  {
 	header{

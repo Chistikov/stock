@@ -319,69 +319,7 @@ article{
 
 
 /************ topAutors.php ************/
-.newWorksCont .contentTopic{
-	margin-bottom: 0px;
-}
-.topAuthorTable *{
-	/*outline: 1px solid green;*/
-	width: 100%;
-	vertical-align: top;
-}
-.topAuthorTable tr{
-	border-bottom: solid 1px #ddd;
 
-}
-.topAuthorTable .userNumber{
-	display: block;
-	width: 55px;
-	font-size: 25px;
-	text-align: center;
-	padding: 23px 10px 17px 0px;
-	color: #aaa;
-}
-.topAuthorTable .userImg{
-	width: auto;
-	height: 70px;
-}
-.topAuthorTable .userImg div{
-	width: 50px;
-	height: 50px;
-	background-size: cover;
-	border-radius: 50%;
-	margin-top: 10px;
-}
-.topAuthorTable .userName{
-	max-width: 662px;
-	padding: 26px 0px 0px 10px;
-	text-transform: uppercase;
-	font-size: 17px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-.topAuthorTable .userInfo{
-	padding: 15px 45px 10px 40px;
-	white-space: nowrap;
-	font-size: 17px;
-	font-weight: 300;
-	line-height: 20px;
-}
-.topAuthorTable .userInfo span{
-	font-weight: 500;
-}
-.topAuthorTable .subscribeButton{
-	padding-top: 27px;
-	padding-right: 10px;
-}
-.topAuthorTable .subscribeButton a{
-	padding: 7px 17px;
-	background-color: #5891cb;
-	text-decoration: none;
-	font-weight: 300;
-	font-size: 16px;
-	color: white;
-	border-radius: 3px;
-}
 
 
 /************ MEDIA ************/
