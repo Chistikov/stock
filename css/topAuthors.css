@@ -1,0 +1,241 @@
+/**{
+	outline: 1px dotted rgba(255,0,255,0.2);
+}*/
+
+.hideEl{
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+article{
+	padding: 65px 0px;
+}
+.wrapper{
+	width: 1120px;
+	padding-bottom: 65px;
+	margin: auto;
+}
+.contentTopic{
+	display: block;
+	width: 1120px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	font-size: 17px;
+	font-weight: 300;
+	color: #888;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.topAuthor{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 1120px;
+	margin: 0px auto;
+	border-bottom: 1px solid #ddd;
+}
+.topAuthor .mainCont{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.topAuthor .mainCont .authorNumber{
+	font-size: 27px;
+	width: 57px;
+	padding: 0px 5px 0px 0px;
+	color: #aaa;
+	line-height: 65px;
+	text-align: center;
+}
+.topAuthor .mainCont .authorImg{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-size: cover;
+	margin: 10px 7px 10px 0px;
+}
+.topAuthor .mainCont .authorNameAndDescription{
+	width: 595px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-top: 12px;
+	padding-right: 25px;
+}
+.topAuthor .mainCont .authorNameAndDescription .authorName{
+	font-size: 20px;
+	font-weight: 400;
+	white-space: nowrap;
+	width: 595px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 22px;
+	color: #222;
+}
+.topAuthor .mainCont .authorNameAndDescription .authorDescription{
+	font-size: 15px;
+	font-weight: 400;
+	white-space: nowrap;
+	width: 595px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #444;
+}
+.topAuthor .authorInfo{
+	width: 175px;
+	font-size: 17px;
+	font-weight: 100;
+	padding: 10px 0px 10px 0px;
+	line-height: 22px;
+}
+.topAuthor .authorInfo div span{
+	font-size: 17px;
+	font-weight: 400;
+	flex-wrap: wrap
+}
+.topAuthor .subscibeCont{
+	padding: 17px 0px;
+}
+.topAuthor .subscibeCont .subscribeBtn{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	background-color: #6a9db7;
+	text-align: center;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 30px;
+	font-size: 17px;
+	margin-right: 5px;
+}
+.topAuthor .subscibeCont .sendMassage{
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	background-color: #bcbcbc;
+	text-align: center;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 30px;
+	font-size: 17px;
+}
+
+
+/************ MEDIA ************/
+
+@media screen and (min-width:769px) and (max-width:1199px){
+  .contentTopic{
+  	width: 750px;
+  }
+  .topAuthor{
+  	width: 750px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription{
+  	width: 260px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorName{
+  	width: 260px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorDescription{
+  	width: 260px;
+  }
+  .topAuthor .authorInfo{
+  	width: 160px;
+  	font-size: 16px;
+  }
+  .topAuthor .authorInfo div span{
+  	font-size: 16px;
+  }
+  .topAuthor .subscibeCont .subscribeBtn{
+  	width: 130px;
+  }
+}
+@media screen and (min-width:421px) and (max-width:768px){
+	.contentTopic{
+  	width: 410px;
+  }
+  .topAuthor{
+  	width: 410px;
+  	flex-wrap: wrap;
+  }
+  .topAuthor .mainCont .authorNameAndDescription{
+  	width: 260px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorName{
+  	width: 280px;
+  	padding-right: 20px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorDescription{
+  	width: 280px;
+  }
+  .topAuthor .authorInfo{
+  	width: 410px;
+  	font-size: 16px;
+  	text-align: center;
+  	padding: 0;
+  }
+  .topAuthor .authorInfo div{
+  	display: inline-block;
+  	padding-right: 15px;
+  }
+  .topAuthor .authorInfo span{
+  	flex-wrap: wrap;
+  	font-size: 16px;
+  }
+  .subscibeCont{
+  	width: 410px;
+  	text-align: center
+  }
+}
+@media screen and (min-width:0px) and (max-width:420px)  {
+	.contentTopic{
+  	width: 320px;
+  }
+  .topAuthor{
+  	width: 320px;
+  	flex-wrap: wrap;
+  }
+  .topAuthor .mainCont .authorNameAndDescription{
+  	width: 250px;
+  	padding-right: 0px;
+    width: 200px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorName{
+  	width: 200px;
+  	font-size: 16px;
+  }
+  .topAuthor .mainCont .authorNameAndDescription .authorDescription{
+  	width: 200px;
+  	font-size: 15px;
+  	font-weight: 100;
+  }
+  .topAuthor .authorInfo{
+  	width: 320px;
+  	font-size: 16px;
+  	text-align: center;
+  	padding: 0;
+  }
+  .topAuthor .authorInfo div{
+  	display: inline-block;
+  	padding-right: 15px;
+  }
+  .topAuthor .authorInfo span{
+  	flex-wrap: wrap;
+  	font-size: 16px;
+  }
+  .subscibeCont{
+  	width: 320px;
+  	text-align: center
+  }	
+}

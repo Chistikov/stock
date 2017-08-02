@@ -1,4 +1,7 @@
-<? require_once "header.php"; ?>
+<? 	require_once "head.php";	?>
+<link rel="stylesheet" href="css/index.css">
+<?	require_once "header.php"; ?>
+
 
 <article>
 	<span class="contentTopic">Недавние работы</span>
@@ -171,7 +174,7 @@
 		
 		
 		<div class="topAuthor">					
-			<a href="topAutors.php" class="viewMoreAuthors"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="topAuthors.php" class="viewMoreAuthors"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 		</div>				
 			
 	</div>
