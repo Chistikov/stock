@@ -189,9 +189,9 @@ article{
   	display: inline-block;
   	padding-right: 15px;
   }
-  .topAuthor .authorInfo span{
+  .topAuthor .authorInfo div span{
   	flex-wrap: wrap;
-  	font-size: 16px;
+  	font-size: 17px;
   }
   .subscibeCont{
   	width: 410px;
@@ -222,15 +222,19 @@ article{
   }
   .topAuthor .authorInfo{
   	width: 320px;
-  	font-size: 16px;
-  	text-align: center;
-  	padding: 0;
+  	font-size: 15px;
+  	/*text-align: center;
+  	padding: 5px 0px;*/
+  	padding: 5px 0px 5px 62px;
   }
   .topAuthor .authorInfo div{
   	display: inline-block;
-  	padding-right: 15px;
+  	padding-right: 10px;
   }
-  .topAuthor .authorInfo span{
+  .topAuthor .authorInfo div:last-child{
+  	padding-right: 0px;
+  }
+  .topAuthor .authorInfo div span{
   	flex-wrap: wrap;
   	font-size: 16px;
   }
